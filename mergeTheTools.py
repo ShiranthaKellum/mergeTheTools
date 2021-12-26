@@ -6,9 +6,6 @@ def mergeTheTools (s, k):
         # print (str [i])
         # print (str [i : i+s])
         sub = s [i : i+k]                       # divide n/k number of substrings which each has k length.
-        # u = []
-        # u.append (sub [0])
-        # print (sub)
         seq = []
         for j in sub:
             seq.append (j)
@@ -17,7 +14,6 @@ def mergeTheTools (s, k):
         # print (u)
         u = OrderedDict.fromkeys (seq)          # fromkeys function of OrderedDict class removes duplicates and return a list without changing the original order.
         print ("".join (u))        
-
 
 if __name__ == '__main__':
     # string = "AAABCADDE"
